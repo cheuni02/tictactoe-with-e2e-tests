@@ -68,3 +68,29 @@ Cypress.Commands.add("snapshotGameStateForMove", (move) => {
 Cypress.Commands.add("recallGameState", (move) => {
   return gameState.get(move);
 });
+
+Cypress.Commands.add("getGameHistory", () => {
+  return gameState;
+});
+
+Cypress.Commands.add("resetGameHistory", () => {
+  return gameState.clear();
+});
+
+Cypress.Commands.add("displayGameHistory", (history) => {
+  cy.log("<<<< diplaying game history >>>>");
+  for (let i = 1; i <= history.size; i++) {
+    cy.log("map.get(3): " + history.get(i));
+  }
+});
+
+Cypress.Commands.add("countMoves", () => {
+  let res;
+  cy.get(".game-info ol li").last().then((li) => {
+    const captionWords = li.text().split(" ");
+    res = captionWords[captionWords.length - 1].slice(1);
+  })
+  .then(() => {
+    return parseInt(res);
+  });
+});
