@@ -1,10 +1,5 @@
 describe("Texts shown/ layout before game begins", () => {
   const firstButtonCopy = "Go to game start";
-
-  beforeEach(() => {
-    cy.visit("/");
-    cy.get(".game-board").should("be.visible"); //wait for game board to load before testing
-  });
   
   it("should show that the first player is X", () => {
     cy.contains("Next player: X");

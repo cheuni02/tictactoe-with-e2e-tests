@@ -1,8 +1,4 @@
 describe("what should happen when a player loses", () => {
-  beforeEach(() => {
-    cy.visit("/");
-    cy.get(".game-board").should("be.visible");
-  });
 
   it("when O loses O cannot continue to play the game", () => {
     cy.contains("Next player")

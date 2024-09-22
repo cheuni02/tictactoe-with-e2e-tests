@@ -1,8 +1,4 @@
 describe("Game Info tracking steps taken and ability to time travel and modify game at any point", () => {
-  beforeEach(() => {
-    cy.visit("/");
-    cy.get(".game-board").should("be.visible");
-  });
   
   it("can recall back to any move in the game if needed", () => {
     let move = 1;

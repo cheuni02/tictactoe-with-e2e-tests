@@ -1,9 +1,5 @@
 describe("Ability to select a square", () => {
   let gameSize = 3;
-  beforeEach(() => {
-    cy.visit("/");
-    cy.get(".game-board").should("be.visible");
-  });
 
   it("X and O can take turns to select a square", () => {
     cy.contains("Next player: X");

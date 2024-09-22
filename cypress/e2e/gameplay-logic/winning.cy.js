@@ -1,8 +1,4 @@
 describe("what should happen when a player wins", () => {
-  beforeEach(() => {
-    cy.visit("/");
-    cy.get(".game-board").should("be.visible");
-  });
 
   it("X should be able to win via a 3 on the top row", () => {
     for (let i = 0; i < 3; i++) {
