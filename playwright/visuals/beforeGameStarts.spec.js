@@ -10,7 +10,7 @@ test.describe("Texts shown/ layout before game begins", () => {
     context = await browser.newContext();
     page = await context.newPage();
 
-    await page.goto("http://localhost:3000");
+    await page.goto("/");
     await expect(page.locator(`[data-test="game-board"]`)).toBeVisible();
   })
   
