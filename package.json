@@ -13,11 +13,14 @@
   },
   "dependencies": {
     "cypress": "^13.14.2",
+    "playwright": "^1.47.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "^5.0.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "@types/node": "^22.5.5",
     "start-server-and-test": "^2.0.8"
   },
   "browserslist": {
