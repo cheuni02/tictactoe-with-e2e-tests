@@ -6,7 +6,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cy:open": "cypress open",
+    "cy:test": "cypress run",
+    "cy:start:test": "start-server-and-test start http://localhost:3000 cy:run"
   },
   "dependencies": {
     "cypress": "^13.14.2",
@@ -14,7 +17,9 @@
     "react-dom": "^18.0.0",
     "react-scripts": "^5.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "start-server-and-test": "^2.0.8"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
