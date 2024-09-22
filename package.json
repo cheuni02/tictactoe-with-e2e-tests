@@ -9,7 +9,7 @@
     "eject": "react-scripts eject",
     "cy:open": "cypress open",
     "cy:test": "cypress run",
-    "cy:start:test": "start-server-and-test start http://localhost:3000 cy:run"
+    "cy:start:test": "start-server-and-test start http://localhost:3000 cy:test"
   },
   "dependencies": {
     "cypress": "^13.14.2",
